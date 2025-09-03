@@ -1,0 +1,118 @@
+[base]
+url = "https://github.com/epics-base/epics-base.git"
+stable = "R7.0.9"
+depends = []
+type = "base"
+env = "EPICS_BASE"
+
+[ca-gateway]
+url = "https://github.com/epics-extensions/ca-gateway.git"
+stable = "R2-1-3-0"
+depends = ["base", "pcas"]
+type = "extension"
+env = "GATEWAY"
+
+[pcas]
+url = "https://github.com/epics-modules/pcas.git"
+stable = "v4.13.3"
+depends = ["base"]
+type = "support"
+env = "PCAS"
+
+[asyn]
+url = "https://github.com/epics-modules/asyn.git"
+stable = "R4-45"
+depends = ["base", "calc", "ipac", "seq", "sscan"]
+type = "support"
+env = "ASYN"
+
+[areaDetector]
+url = "https://github.com/areaDetector/areaDetector.git"
+stable = "R3-14"
+depends = ["base", "asyn", "iocStats", "busy"]
+type = "support"
+env = "AREA_DETECTOR"
+
+[calc]
+url = "https://github.com/epics-modules/calc.git"
+stable = "R3-7-5"
+depends = ["base", "seq", "sscan"]
+type = "support"
+env = "CALC"
+
+[seq]
+url = "https://github.com/epics-modules/sequencer.git"
+stable = "R2-2-9"
+depends = ["base"]
+type = "support"
+env = "SNCSEQ"
+
+[sscan]
+url = "https://github.com/epics-modules/sscan.git"
+stable = "R2-11-6"
+depends = ["base", "seq"]
+type = "support"
+env = "SSCAN"
+
+[StreamDevice]
+url = "https://github.com/paulscherrerinstitute/StreamDevice.git"
+stable = "2.8.26"
+depends = ["base", "asyn", "calc"]
+type = "support"
+env = "STREAM"
+
+[ipac]
+url = "https://github.com/epics-modules/ipac.git"
+stable = "2.16"
+depends = ["base"]
+type = "support"
+env = "IPAC"
+
+[iocStats]
+url = "https://github.com/epics-modules/iocStats.git"
+stable = "3.2.0"
+depends = ["base"]
+type = "support"
+env = "IOCSTATS"
+
+[busy]
+url = "https://github.com/epics-modules/busy.git"
+stable = "R1-7-4"
+depends = ["base", "autosave", "asyn"]
+type = "support"
+env = "BUSY"
+
+[std]
+url = "https://github.com/epics-modules/std.git"
+stable = "R3-6-4"
+depends = ["base", "seq", "asyn"]
+type = "support"
+env = "STD"
+
+[pvxs]
+url = "https://github.com/epics-base/pvxs.git"
+stable = "1.4.0"
+depends = ["base"]
+type = "support"
+env = "PVXS"
+
+[autosave]
+url = "https://github.com/epics-modules/autosave.git"
+stable = "R5-11"
+depends = ["base"]
+type = "support"
+env = "AUTOSAVE"
+
+[modbus]
+url = "https://github.com/epics-modules/modbus.git"
+stable = "R3-4"
+depends = ["base", "asyn"]
+type = "support"
+env = "MODBUS"
+
+[caen_AD1725S]
+url = "https://github.com/IFMIF/caen_AD1725S.git"
+stable = "master"
+depends = ["base", "areaDetector"]
+type = "support"
+env = "CAEN_AD1725S"

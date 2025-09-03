@@ -1,0 +1,8 @@
+SHARED_LIBRARIES=$shared
+STATIC_BUILD=$static
+
+TIRPC=YES
+
+undefine PCRE
+USE_PCRE=NO
+

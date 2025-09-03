@@ -1,0 +1,14 @@
+$order
+
+# ---------------------------------------------------------
+# Build instructions
+# ---------------------------------------------------------
+TOPTARGETS := all distclean
+
+SUBDIRS := $$(patsubst %/,%,$$(wildcard */))
+
+$$(TOPTARGETS): $$(SUBDIRS)
+$$(SUBDIRS):
+	$$(MAKE) -C $$@ $$(MAKECMDGOALS)
+
+.PHONY: $$(TOPTARGETS) $$(SUBDIRS)

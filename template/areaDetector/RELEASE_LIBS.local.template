@@ -1,0 +1,17 @@
+SUPPORT=$$(EPICS_ROOT)/support
+
+# ASYN is needed for base classes 
+ASYN=$$(SUPPORT)/asyn
+
+AREA_DETECTOR=$$(SUPPORT)/areaDetector
+
+# ADSupport is needed by ADCore plugins
+ADSUPPORT=$$(AREA_DETECTOR)/ADSupport
+
+# ADCORE for base classes and plugins
+ADCORE=$$(AREA_DETECTOR)/ADCore
+
+EPICS_ROOT=$EPICS_ROOT_PATH
+EPICS_BASE=$$(EPICS_ROOT)/base/
+
+-include $$(AREA_DETECTOR)/configure/RELEASE_LIBS.local.$$(EPICS_HOST_ARCH)

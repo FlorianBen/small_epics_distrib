@@ -1,0 +1,72 @@
+[base]
+folder = "base"
+version = "stable"
+
+[install]
+workdinr = "workdir"
+in-source = false
+target-folder = "target"
+static = false
+
+[support]
+[support.asyn]
+folder = "asyn"
+version = "stable"
+
+[support.autosave]
+folder = "autosave"
+version = "stable"
+
+[support.pvxs]
+folder = "pvxs"
+version = "stable"
+
+[support.std]
+folder = "std"
+version = "stable"
+
+[support.iocStats]
+folder = "iocStats"
+version = "stable"
+
+[support.StreamDevice]
+folder = "StreamDevice"
+version = "stable"
+
+[support.areaDetector]
+folder = "areaDetector"
+version = "stable"
+
+[support.caen_AD1725S]
+folder = "caen_AD1725S"
+version = "stable"
+
+[support.busy]
+folder = "busy"
+version = "stable"
+
+[support.pcas]
+folder = "pcas"
+version = "stable"
+
+[support.ipac]
+folder = "ipac"
+version = "stable"
+
+[support.calc]
+folder = "calc"
+version = "stable"
+
+[support.seq]
+folder = "seq"
+version = "stable"
+
+[support.sscan]
+folder = "sscan"
+version = "stable"
+
+
+[extension]
+[extension.ca-gateway]
+folder = "ca-gateway"
+version = "stable"
