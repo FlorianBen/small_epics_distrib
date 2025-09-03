@@ -4,7 +4,7 @@ version = "stable"
 
 [install]
 workdinr = "workdir"
-in-source = false
+in-source = true
 target-folder = "target"
 static = false
 
@@ -64,7 +64,6 @@ version = "stable"
 [support.sscan]
 folder = "sscan"
 version = "stable"
-
 
 [extension]
 [extension.ca-gateway]
