@@ -15,7 +15,7 @@ Features:
 
 ## Requirements 
 
-EPICS system dependencies must be installed on your Linux OS. As well as Python. 
+EPICS system dependencies must be installed on your Linux OS. As well as Python and git must be installed to run the script. 
 
 ## How to use
 
