@@ -9,6 +9,6 @@ SUBDIRS := $$(patsubst %/,%,$$(wildcard */))
 
 $$(TOPTARGETS): $$(SUBDIRS)
 $$(SUBDIRS):
-	$$(MAKE) -C $$@ $$(MAKECMDGOALS)
+	$$(MAKE) -C $$@
 
 .PHONY: $$(TOPTARGETS) $$(SUBDIRS)
