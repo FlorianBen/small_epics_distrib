@@ -3,7 +3,7 @@ folder = "base"
 version = "stable"
 
 [install]
-workdinr = "workdir"
+workdir = "../EPICS"
 in-source = true
 target-folder = "target"
 static = false

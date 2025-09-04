@@ -69,6 +69,7 @@ class EpicsDistrib:
     def load_conf(self, filepath: Path):
         file_conf = open(filepath, "rb")
         self.dict_conf = tomllib.load(file_conf)
+        self.workdir = Path(self.dict_conf["install"]["workdir"])
         self.check_deps()
 
     def set_workdir(self, workdir: Path):
